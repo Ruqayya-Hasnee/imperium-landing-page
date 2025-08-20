@@ -3,67 +3,185 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Imperium | Digital Solutions for Businesses</title>
+  <title>Imperium | Marketing Landing Page</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="container">
-      <h1>Welcome to Imperium</h1>
-      <p>We help businesses grow with modern, reliable digital solutions.</p>
-      <a href="#" class="btn">Get Started</a>
-    </div>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Imperium</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn-primary">Get Started</a>
+    <div class="burger">☰</div>
   </header>
 
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-slider">
+      <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80');">
+        <div class="hero-content">
+          <h1>Empowering Businesses to Succeed</h1>
+          <p>We help brands grow with modern strategies and creative solutions.</p>
+          <a href="#features" class="btn-primary">Learn More</a>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80');">
+        <div class="hero-content">
+          <h1>Your Partner in Digital Transformation</h1>
+          <p>Driving innovation and measurable results for ambitious companies.</p>
+          <a href="#contact" class="btn-primary">Get Started</a>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=80');">
+        <div class="hero-content">
+          <h1>Creative Solutions for Modern Brands</h1>
+          <p>We craft unique strategies tailored to your business goals.</p>
+          <a href="#about" class="btn-primary">Discover More</a>
+        </div>
+      </div>
+    </div>
+    <button class="prev">‹</button>
+    <button class="next">›</button>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container about-container">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Our Team">
+      </div>
+      <div class="about-text">
+        <h2>About Imperium</h2>
+        <p>
+          At <strong>Imperium</strong>, we blend creativity with strategy to deliver
+          powerful marketing solutions. Our team of experts helps brands stand out
+          with innovative design, digital campaigns, and branding that connects.
+        </p>
+        <p>
+          We don’t just build brands – we build <em>trust, identity, and impact</em>.
+          Our mission is to empower businesses to achieve sustainable growth through
+          creativity and technology.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <h3>10+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat">
+            <h3>100+</h3>
+            <p>Happy Clients</p>
+          </div>
+          <div class="stat">
+            <h3>500+</h3>
+            <p>Projects Delivered</p>
+          </div>
+        </div>
+        <a href="#contact" class="btn about-btn">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Features Box BELOW About -->
+    <div class="about-features">
+      <div class="feature-box">
+        <h3>No Hidden Cost</h3>
+        <p>There is no hidden monthly fees with your site unless there is a website maintenance contract in place.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Dedicated Team</h3>
+        <p>We work closely with your business to develop your professional website that is catered to your needs and industry. We analyse the industry and the business to elevate your digital backbone.</p>
+      </div>
+      <div class="feature-box">
+        <h3>24/7 Available</h3>
+        <p>Our support team is available 24 hours a day for our clients. We ensure close communication to make sure we meet customer deadlines and support requests.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Features Section -->
-  <section class="features-section">
-    <h2>Our Features</h2>
-    <div class="features-container">
-      <div class="feature-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" alt="Fast">
-        <h3>Fast Performance</h3>
-        <p>Optimized for speed to ensure your business runs smoothly and efficiently.</p>
-      </div>
-      <div class="feature-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Secure">
-        <h3>Secure Platform</h3>
-        <p>Top-level security to keep your data safe and your business protected.</p>
-      </div>
-      <div class="feature-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" alt="Integration">
-        <h3>Easy Integration</h3>
-        <p>Connect seamlessly with the tools and services you already use.</p>
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Our Features</h2>
+      <div class="feature-cards">
+        <div class="feature-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Strategy Icon">
+          <h3>Smart Strategy</h3>
+          <p>We design strategies that align with your business goals for maximum impact.</p>
+        </div>
+        <div class="feature-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/1087/1087840.png" alt="Creative Icon">
+          <h3>Creative Design</h3>
+          <p>Our creative team crafts designs that capture attention and build trust.</p>
+        </div>
+        <div class="feature-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/2620/2620445.png" alt="Growth Icon">
+          <h3>Growth Driven</h3>
+          <p>We focus on delivering measurable growth through innovation and insights.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Testimonials Section -->
-  <section class="testimonials-section">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial">
-      <p>"Imperium helped us triple our growth in less than 6 months!"</p>
-      <span>- John D, CEO TechWorld</span>
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Client">
+          <p>“Imperium transformed our digital presence. Their strategy boosted our sales by 40%.”</p>
+          <h4>John Carter, CEO TechWorld</h4>
+        </div>
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client">
+          <p>“Working with Imperium was a game-changer. Their creativity and professionalism are unmatched.”</p>
+          <h4>Emily Davis, Marketing Head GlobalCorp</h4>
+        </div>
+      </div>
     </div>
-    <div class="client-logos">
-      <img src="https://dummyimage.com/100x40/000/fff.png&text=Logo1" alt="Client 1">
-      <img src="https://dummyimage.com/100x40/000/fff.png&text=Logo2" alt="Client 2">
-      <img src="https://dummyimage.com/100x40/000/fff.png&text=Logo3" alt="Client 3">
+  </section>
+
+  <!-- Client Logos -->
+  <section class="clients">
+    <div class="container">
+      <h2>Trusted By Leading Brands</h2>
+      <div class="logo-grid">
+        <div class="logo-item"><img src="https://dummyimage.com/120x60/000/fff&text=Logo+1" alt="Client Logo"></div>
+        <div class="logo-item"><img src="https://dummyimage.com/120x60/000/fff&text=Logo+2" alt="Client Logo"></div>
+        <div class="logo-item"><img src="https://dummyimage.com/120x60/000/fff&text=Logo+3" alt="Client Logo"></div>
+        <div class="logo-item"><img src="https://dummyimage.com/120x60/000/fff&text=Logo+4" alt="Client Logo"></div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <p>Contact us: info@imperium.com | +92 300 1234567</p>
-      <p>
-        <a href="#">Facebook</a> | 
-        <a href="#">Twitter</a> | 
-        <a href="#">LinkedIn</a>
-      </p>
-      <p>&copy; 2025 Imperium. All rights reserved.</p>
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-info">
+        <h3>Imperium</h3>
+        <p>Building brands. Driving growth. Delivering impact.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <div class="social-links">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Twitter"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733614.png" alt="LinkedIn"></a>
+      </div>
     </div>
   </footer>
 
